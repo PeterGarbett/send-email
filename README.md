@@ -11,11 +11,15 @@ config file is in the format
 Which needs to be filled out with correct data before use.
 
 # Use default email address in config file
+#!/bin/bash
 #
-python3 send_email.py "./email.config"  "test subject" "test body" 
+# Fill out email.config with reasonable values before tryng this. 
+
+# Use default email address in config file
+#
+python3 send_email.py "/etc/email.config"  "test subject" "test body" 
 #
 # Overide email 
 #
-python3 send_email.py "./email.config"  "test subject" "test body" "petegarbett1958@gmail.com"
-
+python3 send_email.py "/etc/email.config"  "test subject" "test body" "fred@gmail.com"
 

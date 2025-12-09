@@ -4,10 +4,10 @@
 
 # Use default email address in config file
 #
-python3 send_email.py "./email.config"  "test subject" "test body" 
+python3 send_email.py "/etc/email.config"  "test subject" "test body" 
 #
 # Overide email 
 #
-python3 send_email.py "./email.config"  "test subject" "test body" "fred@gmail.com"
+python3 send_email.py "/etc/email.config"  "test subject" "test body" "fred@gmail.com"
 
 

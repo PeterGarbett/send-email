@@ -1,0 +1,6 @@
+#!/bin/bash
+# Place files in expected places
+
+sudo cp send_email.py /usr/local/sbin/
+sudo cp email.config  /etc/
+
