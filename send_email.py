@@ -1,4 +1,4 @@
-""" Send mail using a gmail account, the details of which are in a .json config file. """
+"""Send mail using a gmail account, the details of which are in a .json config file."""
 
 import smtplib
 import sys
@@ -43,12 +43,15 @@ def send_email(user, pwd, recipient, subject, body):
         server.sendmail(FROM, TO, message)
         server.close()
         # print("successfully sent the mail")
+        return True
     except Exception as err:
         print("failed to send email", err)
 
+    return False
+
 
 def message_using_config(subject, message, recipient, config):
-    """Send a message to a recipient using the email 
+    """Send a message to a recipient using the email
     account/password/default recipient from a config file"""
     mail_details = load_config(config)
 
