@@ -70,7 +70,7 @@ def message_using_config(subject, message, recipient, config):
 
     #    print("recipient=", recipient)
 
-    send_email(user, password, recipient, subject, message)
+    return send_email(user, password, recipient, subject, message)
 
 
 # Example call
